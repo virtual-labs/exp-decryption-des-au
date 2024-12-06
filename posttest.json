@@ -1,0 +1,40 @@
+
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "In DES decryption, what happens after the 16 rounds of processing?",
+      "answers": {
+        "a": "Initial permutation",
+        "b": "Final permutation",
+        "c": "Inverse initial permutation",
+        "d": "Subkeys are generated"
+      },
+      "explanations": {
+        "a": "Incorrect. The initial permutation is the first step in encryption, not the last step in decryption.",
+        "b": "Incorrect. The final permutation is part of the encryption process.",
+        "c": "Correct. After the 16 rounds of decryption, the inverse initial permutation is applied.",
+        "d": "Incorrect. Subkey generation occurs before encryption and decryption processes."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If a ciphertext block is decrypted with DES using the wrong key, what is the result?",
+      "answers": {
+        "a": "The original plaintext with some errors",
+        "b": "An easily correctable piece of plaintext",
+        "c": "A completely different and random plaintext",
+        "d": "The ciphertext remains unchanged"
+      },
+      "explanations": {
+        "a": "Incorrect. Using the wrong key does not yield the original plaintext, even with errors.",
+        "b": "Incorrect. The incorrect plaintext is not easily correctable as it is essentially random.",
+        "c": "Correct. Using the wrong key in DES decryption results in a random and meaningless output.",
+        "d": "Incorrect. The ciphertext does change, but the output is random and not the original plaintext."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

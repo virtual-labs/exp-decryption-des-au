@@ -1,0 +1,39 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the first step in the DES decryption process?",
+      "answers": {
+        "a": "Round function application",
+        "b": "Final permutation",
+        "c": "Inverse initial permutation",
+        "d": "Key generation"
+      },
+      "explanations": {
+        "a": "Incorrect. The round function application comes after the initial permutation.",
+        "b": "Incorrect. The final permutation is the last step in the encryption process, not the first in decryption.",
+        "c": "Correct. The inverse initial permutation is the first step in DES decryption.",
+        "d": "Incorrect. Key generation is not a step in the decryption process; it precedes encryption and decryption."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which keys are used first in the process of DES decryption?",
+      "answers": {
+        "a": "The first round keys",
+        "b": "The last round keys",
+        "c": "All keys at once",
+        "d": "No keys are used"
+      },
+      "explanations": {
+        "a": "Incorrect. During decryption, DES does not use the first round keys first.",
+        "b": "Correct. In DES decryption, the process starts with the last (16th) round keys.",
+        "c": "Incorrect. Keys are used one at a time per round, not all at once.",
+        "d": "Incorrect. Keys are essential for the DES decryption process."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
