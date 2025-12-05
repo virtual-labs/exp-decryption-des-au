@@ -432,13 +432,130 @@
                     </div>
                     <p class="panel">Explanation</p>
                 </div>
+                
+                  <div class="question beginner">
+                    How many rounds are used in DES decryption?
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer2a">
+                      <label>
+                        <input type="radio" name="question2" value="a">
+                        a: 8
+                      </label>
+                      <a href="#" id="explanation2a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer2b">
+                      <label>
+                        <input type="radio" name="question2" value="b">
+                        b: 10
+                      </label>
+                      <a href="#" id="explanation2b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer2c">
+                      <label>
+                        <input type="radio" name="question2" value="c">
+                        c: 16
+                      </label>
+                      <a href="#" id="explanation2c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer2d">
+                      <label>
+                        <input type="radio" name="question2" value="d">
+                        d: 32
+                      </label>
+                      <a href="#" id="explanation2d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question beginner">
+                    Which permutation is applied first during DES decryption?
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer3a">
+                      <label>
+                        <input type="radio" name="question3" value="a">
+                        a: Final Permutation (FP)
+                      </label>
+                      <a href="#" id="explanation3a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3b">
+                      <label>
+                        <input type="radio" name="question3" value="b">
+                        b: Initial Permutation (IP)
+                      </label>
+                      <a href="#" id="explanation3b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3c">
+                      <label>
+                        <input type="radio" name="question3" value="c">
+                        c: Expansion permutation
+                      </label>
+                      <a href="#" id="explanation3c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3d">
+                      <label>
+                        <input type="radio" name="question3" value="d">
+                        d: Key permutation
+                      </label>
+                      <a href="#" id="explanation3d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question beginner">
+                    DES decryption begins with splitting the ciphertext into:
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer4a">
+                      <label>
+                        <input type="radio" name="question4" value="a">
+                        a: Two 16-bit halves
+                      </label>
+                      <a href="#" id="explanation4a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4b">
+                      <label>
+                        <input type="radio" name="question4" value="b">
+                        b: Two 32-bit halves
+                      </label>
+                      <a href="#" id="explanation4b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4c">
+                      <label>
+                        <input type="radio" name="question4" value="c">
+                        c: Two 48-bit halves
+                      </label>
+                      <a href="#" id="explanation4c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4d">
+                      <label>
+                        <input type="radio" name="question4" value="d">
+                        d: Two 56-bit halves
+                      </label>
+                      <a href="#" id="explanation4d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
                </div>
                 <button id="submit" class="btn btn-primary">Submit Quiz</button>
                 <div id="results"></div>
           </div>
             
             <script>
-              const myQuestions = [{"question":"What is the first step in the DES decryption process?","answers":{"a":"Round function application","b":"Final permutation","c":"Inverse initial permutation","d":"Key generation"},"explanations":{"a":"Incorrect. The round function application comes after the initial permutation.","b":"Incorrect. The final permutation is the last step in the encryption process, not the first in decryption.","c":"Correct. The inverse initial permutation is the first step in DES decryption.","d":"Incorrect. Key generation is not a step in the decryption process; it precedes encryption and decryption."},"correctAnswer":"c","difficulty":"beginner"},{"question":"Which keys are used first in the process of DES decryption?","answers":{"a":"The first round keys","b":"The last round keys","c":"All keys at once","d":"No keys are used"},"explanations":{"a":"Incorrect. During decryption, DES does not use the first round keys first.","b":"Correct. In DES decryption, the process starts with the last (16th) round keys.","c":"Incorrect. Keys are used one at a time per round, not all at once.","d":"Incorrect. Keys are essential for the DES decryption process."},"correctAnswer":"b","difficulty":"beginner"}];
+              const myQuestions = [{"question":"What is the first step in the DES decryption process?","answers":{"a":"Round function application","b":"Final permutation","c":"Inverse initial permutation","d":"Key generation"},"explanations":{"a":"Incorrect. The round function application comes after the initial permutation.","b":"Incorrect. The final permutation is the last step in the encryption process, not the first in decryption.","c":"Correct. The inverse initial permutation is the first step in DES decryption.","d":"Incorrect. Key generation is not a step in the decryption process; it precedes encryption and decryption."},"correctAnswer":"c","difficulty":"beginner"},{"question":"Which keys are used first in the process of DES decryption?","answers":{"a":"The first round keys","b":"The last round keys","c":"All keys at once","d":"No keys are used"},"explanations":{"a":"Incorrect. During decryption, DES does not use the first round keys first.","b":"Correct. In DES decryption, the process starts with the last (16th) round keys.","c":"Incorrect. Keys are used one at a time per round, not all at once.","d":"Incorrect. Keys are essential for the DES decryption process."},"correctAnswer":"b","difficulty":"beginner"},{"question":"How many rounds are used in DES decryption?","answers":{"a":"8","b":"10","c":"16","d":"32"},"explanations":{"a":"Incorrect. DES decryption uses more than 8 rounds.","b":"Incorrect. DES decryption does not use 10 rounds.","c":"Correct. DES decryption uses exactly 16 rounds, the same as DES encryption.","d":"Incorrect. DES decryption does not use 32 rounds."},"correctAnswer":"c","difficulty":"beginner"},{"question":"Which permutation is applied first during DES decryption?","answers":{"a":"Final Permutation (FP)","b":"Initial Permutation (IP)","c":"Expansion permutation","d":"Key permutation"},"explanations":{"a":"Incorrect. The Final Permutation is applied last, not first.","b":"Correct. The Initial Permutation (IP) is applied first to the ciphertext in DES decryption.","c":"Incorrect. The expansion permutation is applied during the round function, not first.","d":"Incorrect. Key permutation is not the first step in decryption."},"correctAnswer":"b","difficulty":"beginner"},{"question":"DES decryption begins with splitting the ciphertext into:","answers":{"a":"Two 16-bit halves","b":"Two 32-bit halves","c":"Two 48-bit halves","d":"Two 56-bit halves"},"explanations":{"a":"Incorrect. DES decryption does not split ciphertext into 16-bit halves.","b":"Correct. DES decryption splits the ciphertext into two 32-bit halves after the initial permutation.","c":"Incorrect. Two 48-bit halves do not match the DES block size structure.","d":"Incorrect. Two 56-bit halves do not match the DES decryption structure."},"correctAnswer":"b","difficulty":"beginner"}];
             </script>
               <script src="./assets/js/assessment_v2.js"></script>  
           <div class="bug-report-mobile">

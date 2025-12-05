@@ -432,13 +432,130 @@
                     </div>
                     <p class="panel">Explanation</p>
                 </div>
+                
+                  <div class="question intermediate">
+                    Which of the following steps is identical in both DES encryption and decryption?
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer2a">
+                      <label>
+                        <input type="radio" name="question2" value="a">
+                        a: Order of applying round keys
+                      </label>
+                      <a href="#" id="explanation2a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer2b">
+                      <label>
+                        <input type="radio" name="question2" value="b">
+                        b: Feistel round function
+                      </label>
+                      <a href="#" id="explanation2b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer2c">
+                      <label>
+                        <input type="radio" name="question2" value="c">
+                        c: Final permutation application
+                      </label>
+                      <a href="#" id="explanation2c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer2d">
+                      <label>
+                        <input type="radio" name="question2" value="d">
+                        d: Key generation process
+                      </label>
+                      <a href="#" id="explanation2d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question intermediate">
+                    The Feistel function during DES decryption takes which inputs?
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer3a">
+                      <label>
+                        <input type="radio" name="question3" value="a">
+                        a: Left half and round key
+                      </label>
+                      <a href="#" id="explanation3a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3b">
+                      <label>
+                        <input type="radio" name="question3" value="b">
+                        b: Right half and round key
+                      </label>
+                      <a href="#" id="explanation3b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3c">
+                      <label>
+                        <input type="radio" name="question3" value="c">
+                        c: Entire 64-bit block and round key
+                      </label>
+                      <a href="#" id="explanation3c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3d">
+                      <label>
+                        <input type="radio" name="question3" value="d">
+                        d: 48-bit key only
+                      </label>
+                      <a href="#" id="explanation3d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question beginner">
+                    DES decryption reverses the effect of encryption primarily by:
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer4a">
+                      <label>
+                        <input type="radio" name="question4" value="a">
+                        a: Using inverse S-boxes
+                      </label>
+                      <a href="#" id="explanation4a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4b">
+                      <label>
+                        <input type="radio" name="question4" value="b">
+                        b: Reapplying the initial key
+                      </label>
+                      <a href="#" id="explanation4b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4c">
+                      <label>
+                        <input type="radio" name="question4" value="c">
+                        c: Reversing the round key sequence
+                      </label>
+                      <a href="#" id="explanation4c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4d">
+                      <label>
+                        <input type="radio" name="question4" value="d">
+                        d: Halving the block size
+                      </label>
+                      <a href="#" id="explanation4d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
                </div>
                 <button id="submit" class="btn btn-primary">Submit Quiz</button>
                 <div id="results"></div>
           </div>
             
             <script>
-              const myQuestions = [{"question":"In DES decryption, what happens after the 16 rounds of processing?","answers":{"a":"Initial permutation","b":"Final permutation","c":"Inverse initial permutation","d":"Subkeys are generated"},"explanations":{"a":"Incorrect. The initial permutation is the first step in encryption, not the last step in decryption.","b":"Incorrect. The final permutation is part of the encryption process.","c":"Correct. After the 16 rounds of decryption, the inverse initial permutation is applied.","d":"Incorrect. Subkey generation occurs before encryption and decryption processes."},"correctAnswer":"c","difficulty":"beginner"},{"question":"If a ciphertext block is decrypted with DES using the wrong key, what is the result?","answers":{"a":"The original plaintext with some errors","b":"An easily correctable piece of plaintext","c":"A completely different and random plaintext","d":"The ciphertext remains unchanged"},"explanations":{"a":"Incorrect. Using the wrong key does not yield the original plaintext, even with errors.","b":"Incorrect. The incorrect plaintext is not easily correctable as it is essentially random.","c":"Correct. Using the wrong key in DES decryption results in a random and meaningless output.","d":"Incorrect. The ciphertext does change, but the output is random and not the original plaintext."},"correctAnswer":"c","difficulty":"beginner"}];
+              const myQuestions = [{"question":"In DES decryption, what happens after the 16 rounds of processing?","answers":{"a":"Initial permutation","b":"Final permutation","c":"Inverse initial permutation","d":"Subkeys are generated"},"explanations":{"a":"Incorrect. The initial permutation is the first step in encryption, not the last step in decryption.","b":"Incorrect. The final permutation is part of the encryption process.","c":"Correct. After the 16 rounds of decryption, the inverse initial permutation is applied.","d":"Incorrect. Subkey generation occurs before encryption and decryption processes."},"correctAnswer":"c","difficulty":"beginner"},{"question":"If a ciphertext block is decrypted with DES using the wrong key, what is the result?","answers":{"a":"The original plaintext with some errors","b":"An easily correctable piece of plaintext","c":"A completely different and random plaintext","d":"The ciphertext remains unchanged"},"explanations":{"a":"Incorrect. Using the wrong key does not yield the original plaintext, even with errors.","b":"Incorrect. The incorrect plaintext is not easily correctable as it is essentially random.","c":"Correct. Using the wrong key in DES decryption results in a random and meaningless output.","d":"Incorrect. The ciphertext does change, but the output is random and not the original plaintext."},"correctAnswer":"c","difficulty":"beginner"},{"question":"Which of the following steps is identical in both DES encryption and decryption?","answers":{"a":"Order of applying round keys","b":"Feistel round function","c":"Final permutation application","d":"Key generation process"},"explanations":{"a":"Incorrect. The order of applying round keys differs between encryption and decryption.","b":"Correct. The Feistel round function is applied identically in both DES encryption and decryption processes.","c":"Incorrect. The final permutation application is different in encryption and decryption.","d":"Incorrect. Key generation is a separate process that precedes both encryption and decryption."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"The Feistel function during DES decryption takes which inputs?","answers":{"a":"Left half and round key","b":"Right half and round key","c":"Entire 64-bit block and round key","d":"48-bit key only"},"explanations":{"a":"Incorrect. The Feistel function takes the right half, not the left half.","b":"Correct. The Feistel function during DES decryption takes the right half and the round key as inputs.","c":"Incorrect. The Feistel function operates on half the block, not the entire 64-bit block.","d":"Incorrect. The Feistel function requires both half of the block and the round key."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"DES decryption reverses the effect of encryption primarily by:","answers":{"a":"Using inverse S-boxes","b":"Reapplying the initial key","c":"Reversing the round key sequence","d":"Halving the block size"},"explanations":{"a":"Incorrect. DES decryption uses the same S-boxes as encryption, not inverse S-boxes.","b":"Incorrect. DES decryption does not reapply the initial key.","c":"Correct. DES decryption reverses the effect of encryption by reversing the round key sequence, applying them in reverse order.","d":"Incorrect. The block size is not changed during decryption."},"correctAnswer":"c","difficulty":"beginner"}];
             </script>
               <script src="./assets/js/assessment_v2.js"></script>  
           <div class="bug-report-mobile">
