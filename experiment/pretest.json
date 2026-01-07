@@ -34,6 +34,57 @@
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "How many rounds are used in DES decryption?",
+      "answers": {
+        "a": "8",
+        "b": "10",
+        "c": "16",
+        "d": "32"
+      },
+      "explanations": {
+        "a": "Incorrect. DES decryption uses more than 8 rounds.",
+        "b": "Incorrect. DES decryption does not use 10 rounds.",
+        "c": "Correct. DES decryption uses exactly 16 rounds, the same as DES encryption.",
+        "d": "Incorrect. DES decryption does not use 32 rounds."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which permutation is applied first during DES decryption?",
+      "answers": {
+        "a": "Final Permutation (FP)",
+        "b": "Initial Permutation (IP)",
+        "c": "Expansion permutation",
+        "d": "Key permutation"
+      },
+      "explanations": {
+        "a": "Incorrect. The Final Permutation is applied last, not first.",
+        "b": "Correct. The Initial Permutation (IP) is applied first to the ciphertext in DES decryption.",
+        "c": "Incorrect. The expansion permutation is applied during the round function, not first.",
+        "d": "Incorrect. Key permutation is not the first step in decryption."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "DES decryption begins with splitting the ciphertext into:",
+      "answers": {
+        "a": "Two 16-bit halves",
+        "b": "Two 32-bit halves",
+        "c": "Two 48-bit halves",
+        "d": "Two 56-bit halves"
+      },
+      "explanations": {
+        "a": "Incorrect. DES decryption does not split ciphertext into 16-bit halves.",
+        "b": "Correct. DES decryption splits the ciphertext into two 32-bit halves after the initial permutation.",
+        "c": "Incorrect. Two 48-bit halves do not match the DES block size structure.",
+        "d": "Incorrect. Two 56-bit halves do not match the DES decryption structure."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
   ]
 }
