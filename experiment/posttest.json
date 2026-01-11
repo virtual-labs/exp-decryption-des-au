@@ -35,6 +35,57 @@
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following steps is identical in both DES encryption and decryption?",
+      "answers": {
+        "a": "Order of applying round keys",
+        "b": "Feistel round function",
+        "c": "Final permutation application",
+        "d": "Key generation process"
+      },
+      "explanations": {
+        "a": "Incorrect. The order of applying round keys differs between encryption and decryption.",
+        "b": "Correct. The Feistel round function is applied identically in both DES encryption and decryption processes.",
+        "c": "Incorrect. The final permutation application is different in encryption and decryption.",
+        "d": "Incorrect. Key generation is a separate process that precedes both encryption and decryption."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The Feistel function during DES decryption takes which inputs?",
+      "answers": {
+        "a": "Left half and round key",
+        "b": "Right half and round key",
+        "c": "Entire 64-bit block and round key",
+        "d": "48-bit key only"
+      },
+      "explanations": {
+        "a": "Incorrect. The Feistel function takes the right half, not the left half.",
+        "b": "Correct. The Feistel function during DES decryption takes the right half and the round key as inputs.",
+        "c": "Incorrect. The Feistel function operates on half the block, not the entire 64-bit block.",
+        "d": "Incorrect. The Feistel function requires both half of the block and the round key."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "DES decryption reverses the effect of encryption primarily by:",
+      "answers": {
+        "a": "Using inverse S-boxes",
+        "b": "Reapplying the initial key",
+        "c": "Reversing the round key sequence",
+        "d": "Halving the block size"
+      },
+      "explanations": {
+        "a": "Incorrect. DES decryption uses the same S-boxes as encryption, not inverse S-boxes.",
+        "b": "Incorrect. DES decryption does not reapply the initial key.",
+        "c": "Correct. DES decryption reverses the effect of encryption by reversing the round key sequence, applying them in reverse order.",
+        "d": "Incorrect. The block size is not changed during decryption."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
     }
   ]
 }
