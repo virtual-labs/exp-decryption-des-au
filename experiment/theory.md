@@ -29,6 +29,11 @@ The left and right halves are swapped, preparing for the next round.
 4. Final Permutation
 After completing the 16 rounds, a 'Final Permutation' is applied to the combined data (left and right halves). This permutation is the inverse of the 'Initial Permutation' and produces the final decrypted output.
 
+### Theoretical Note: 
+•	 DES decryption is the reverse operation of DES encryption but uses the same algorithmic structure due to its Feistel network design. In DES, decryption is performed by applying the same 16-round Feistel process but using the subkeys in reverse order. The ciphertext is first passed through the Initial Permutation (IP) and split into left and right 32-bit halves. During each round of decryption, the right half is fed into the Feistel function, combined with the corresponding subkey, and XORed with the left half to retrieve the previous round’s values. The Feistel structure ensures that reversing the subkey order automatically reverses the encryption process without requiring a separate inverse algorithm.
+•	 After completing all 16 rounds with subkeys K16 to K1, the halves are swapped, and a Final Permutation (FP) is applied to obtain the original plaintext. This property of DES—same structure for encryption and decryption with only key order reversed—makes it efficient and easy to implement in hardware and software. DES decryption thus systematically undoes the substitutions, permutations, and mixing performed during encryption, restoring the original 64-bit data block.
+
+
 Conclusion
 The DES decryption process, like encryption, involves a series of carefully orchestrated steps. Understanding the intricacies of the 'Expansion,' 'S-Box' substitution, and permutation operations is crucial for grasping the inner workings of DES decryption.
 
